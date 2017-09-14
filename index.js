@@ -30,7 +30,7 @@ function viewCart() {
     var item = Object.keys(cart)[0]; // bananas
     var price = itemAndPrice[item]; // 17
 
-    itemsAndPrices.push(`${item} at $${price}`);
+    itemsAndPrices.push(`${item} at \$${price}`);
   }
 
   console.log(`In your cart, you have ${itemsAndPrices}.`)
