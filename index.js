@@ -26,12 +26,14 @@ function viewCart() {
 
   var itemsAndPrices = [];
   for (var i = 0, l = cart.length; i < l; i++) {
-    var itemAndPrice = cart[i]; // Ex. cart = { "bananas": 17 }
+    var itemAndPrice = cart[i]; //  cart = { "bananas": 17 }
     var item = Object.keys(cart)[0]; // bananas
-    var price = itemAndPrice[item]
+    var price = itemAndPrice[item]; // 17
+
+    itemsAndPrices.push(`${item} at $${price}`);
   }
 
-  console.log(`In your cart, you have ${item} at $${price}.`)
+  console.log(`In your cart, you have ${itemsAndPrices}.`)
 }
 
 function total() {
