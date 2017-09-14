@@ -31,7 +31,7 @@ function viewCart() {
     var price = itemAndPrice[item]
   }
 
-  console.log(`In your cart,  you have ${item} at $${price}.`)
+  console.log(`In your cart, you have ${item} at $${price}.`)
 }
 
 function total() {
