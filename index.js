@@ -39,7 +39,7 @@ function viewCart() {
   }
 
   if (itemsAndPrices.length === 2) {
-  console.log(`In your cart, you have ${itemsAndPrices[0] and ${itemsAndPrices[1]}.`)
+  console.log(`In your cart, you have ${itemsAndPrices}.`)
   }
 }
 
