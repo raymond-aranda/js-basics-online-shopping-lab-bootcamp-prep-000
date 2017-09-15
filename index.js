@@ -31,15 +31,7 @@ function viewCart() {
     var item = Object.keys(itemAndPrice)[0]; // "bananas"
     var price = itemAndPrice[item]; // 17
 
-    itemsAndPrices.push(`${item} at $${price}`); // bananas at 17
-  }
-
-  if (itemsAndPrices.length === 1) {
-  console.log(`In your cart, you have ${itemsAndPrices}.`)
-  }
-
-  if (itemsAndPrices.length === 2) {
-  console.log(`In your cart, you have ${itemsAndPrices}.`)
+    itemsAndPrices.push(`${item} at $${price}`); // "bananas at 17"
   }
 }
 
