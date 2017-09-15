@@ -34,7 +34,7 @@ function viewCart() {
     itemsAndPrices.push(`${item} at $${price}`);
   }
 
-  console.log(itemsAndPrices)
+  console.log(`In your cart, you have ${itemsAndPrices}`)
 }
 
 function total() {
