@@ -27,14 +27,20 @@ function viewCart() {
   var itemsAndPrices = [];
 
   for (var i = 0, l = cart.length; i < l; i++) {
-    var itemAndPrice = cart[i]; // { "bananas": 17 }
-    var item = Object.keys(itemAndPrice)[0]; // bananas
+    var itemAndPrice = cart[i]; // ONE CART // { "bananas": 17 }
+    var item = Object.keys(itemAndPrice)[0]; // "bananas"
     var price = itemAndPrice[item]; // 17
 
-    itemsAndPrices.push(`${item} at $${price}`);
+    itemsAndPrices.push(`${item} at $${price}`); // bananas at 17
   }
 
+  if (itemsAndPrices.length === 1) {
   console.log(`In your cart, you have ${itemsAndPrices}.`)
+  }
+
+  if (itemsAndPrices.length === 2) {
+  console.log(`In your cart, you have ${itemsAndPrices[0] and ${itemsAndPrices[1]}.`)
+  }
 }
 
 function total() {
