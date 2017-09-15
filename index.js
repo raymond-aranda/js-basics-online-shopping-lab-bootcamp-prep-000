@@ -62,7 +62,7 @@ function removeFromCart(item) {
     if (cart[i].hasOwnProperty(item)) {
       itemInCart = true;
 
-      cart = cart.slice(0, 0).concat(cart.slice(0 + 1));
+      cart = cart.slice(0, i).concat(cart.slice(i + 1));
       l--
 
       console.log(cart)
