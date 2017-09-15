@@ -25,9 +25,10 @@ function viewCart() {
   }
 
   var itemsAndPrices = [];
+
   for (var i = 0, l = cart.length; i < l; i++) {
-    var itemAndPrice = cart[i]; //  cart = { "bananas": 17 }
-    var item = Object.keys(cart)[0]; // bananas
+    var itemAndPrice = cart[i]; // { "bananas": 17 }
+    var item = Object.keys(itemAndPrice)[0]; // bananas
     var price = itemAndPrice[item]; // 17
 
     itemsAndPrices.push(`${item} at \$${price}`);
