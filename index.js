@@ -55,7 +55,7 @@ function total() {
   return sum
 }
 
-ffunction removeFromCart(item) {
+function removeFromCart(item) {
   var itemInCart = false;
 
   for (var i = 0, l = cart.length; i < l; i++) {
