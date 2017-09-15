@@ -34,7 +34,9 @@ function viewCart() {
     itemsAndPrices.push(`${item} at $${price}`);
   }
 
+  if (itemsAndPrices.length === 1) {
   console.log(`In your cart, you have ${itemsAndPrices}.`)
+  }
 }
 
 function total() {
