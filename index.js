@@ -27,12 +27,14 @@ function viewCart() {
   var itemsAndPrices = [];
 
   for (var i = 0, l = cart.length; i < l; i++) {
-    var itemAndPrice = cart[i]; // ONE CART // { "bananas": 17 }
-    var item = Object.keys(itemAndPrice)[0]; // "bananas"
-    var price = itemAndPrice[item]; // 17
+    var itemAndPrice = cart[i]; 
+    var item = Object.keys(itemAndPrice)[0]; 
+    var price = itemAndPrice[item]; 
 
-    itemsAndPrices.push(`${item} at $${price}`); // "bananas at 17"
+    itemsAndPrices.push(`${item} at $${price}`); 
   }
+
+  console.log(itemsAndPrices)
 }
 
 function total() {
