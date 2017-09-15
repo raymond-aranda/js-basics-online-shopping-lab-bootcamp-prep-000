@@ -55,8 +55,19 @@ function total() {
   return sum
 }
 
-function removeFromCart(item) {
-  // write your code here
+ffunction removeFromCart(item) {
+  var itemInCart = false;
+
+  for (var i = 0, l = cart.length; i < l; i++) {
+    if (cart[i].hasOwnProperty(item)) {
+      itemInCart = true;
+
+      cart = cart.slice(0, 0).concat(cart.slice(0 + 1));
+      l--
+
+      console.log(cart)
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
