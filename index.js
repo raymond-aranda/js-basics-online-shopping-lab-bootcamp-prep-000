@@ -69,11 +69,11 @@ function removeFromCart(item) {
     }
   }
 
-  if (itemInCart = false) {
-    console.log("That item is not in your cart.")
+  if (!itemInCart) {
+    console.log("That item is not in your cart.");
   }
 
-  return cart
+  return cart;
 }
 
 function placeOrder(cardNumber) {
